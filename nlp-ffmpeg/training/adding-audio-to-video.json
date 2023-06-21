@@ -1,0 +1,240 @@
+{
+    "requests": [
+        {
+            "command": "ffmpeg -i video1.avi -i audio1.mp3 -c copy output1.mkv",
+            "request": "Please merge the video file 'video1.avi' with the audio file 'audio1.mp3' and save the output as 'output1.mkv'."
+        },
+        {
+            "command": "ffmpeg -i input2.mov -i sound2.flac -c:v copy -c:a aac -map 0:v:0 -map 1:a:0 output2.mov",
+            "request": "Join the video file 'input2.mov' with the audio file 'sound2.flac'. Keep the video codec intact and convert the audio codec to AAC. Save the resulting file as 'output2.mov'."
+        },
+        {
+            "command": "ffmpeg -i vid3.mp4 -i aud3.wav -c copy final3.mp4",
+            "request": "Combine the video file 'vid3.mp4' with the audio file 'aud3.wav' without altering any codecs. Save the output as 'final3.mp4'."
+        },
+        {
+            "command": "ffmpeg -i video4.mkv -i audio4.aac -map 0 -map 1 -c copy output4.mkv",
+            "request": "Please merge the video file 'video4.mkv' with the audio file 'audio4.aac'. Preserve the original codecs and generate 'output4.mkv'."
+        },
+        {
+            "command": "ffmpeg -i input5.webm -i sound5.ogg -c:v copy -c:a libvorbis -strict experimental output5.webm",
+            "request": "Take the video file 'input5.webm' and the audio file 'sound5.ogg'. Keep the video codec unchanged and change the audio codec to Vorbis. Save the output as 'output5.webm'."
+        },
+        {
+            "command": "ffmpeg -i vid6.mp4 -i aud6.flac -c:v libx264 -c:a aac output6.mp4",
+            "request": "Combine the video file 'vid6.mp4' with the audio file 'aud6.flac'. Set the video codec to H.264 and the audio codec to AAC. Export the resulting file as 'output6.mp4'."
+        },
+        {
+            "command": "ffmpeg -i video7.mov -i audio7.wav -c copy final7.mov",
+            "request": "Merge the video file 'video7.mov' with the audio file 'audio7.wav' without modifying any codecs. Save the output as 'final7.mov'."
+        },
+        {
+            "command": "ffmpeg -i input8.mp4 -i sound8.aac -c:v copy -c:a libvorbis output8.mp4",
+            "request": "Combine the video file 'input8.mp4' with the audio file 'sound8.aac'. Preserve the video codec and change the audio codec to Vorbis. Create 'output8.mp4' as the output file."
+        },
+        {
+            "command": "ffmpeg -i vid9.mkv -i aud9.mp3 -c:v libx265 -c:a aac output9.mkv",
+            "request": "Merge the video file 'vid9.mkv' with the audio file 'aud9.mp3'. Set the video codec to libx265 and the audio codec to AAC. Save the output as 'output9.mkv'."
+        },
+        {
+            "command": "ffmpeg -i video1.avi -i audio1.mp3 -c copy output1.mkv",
+            "request": "Please merge the video file 'video1.avi' with the audio file 'audio1.mp3' and save the output as 'output1.mkv'."
+        },
+        {
+            "command": "ffmpeg -i input2.mov -i sound2.flac -c:v copy -c:a aac -map 0:v:0 -map 1:a:0 output2.mov",
+            "request": "Join the video file 'input2.mov' with the audio file 'sound2.flac'. Keep the video codec intact and convert the audio codec to AAC. Save the resulting file as 'output2.mov'."
+        },
+        {
+            "command": "ffmpeg -i vid3.mp4 -i aud3.wav -c copy final3.mp4",
+            "request": "Combine the video file 'vid3.mp4' with the audio file 'aud3.wav' without altering any codecs. Save the output as 'final3.mp4'."
+        },
+        {
+            "command": "ffmpeg -i video4.mkv -i audio4.aac -map 0 -map 1 -c copy output4.mkv",
+            "request": "Please merge the video file 'video4.mkv' with the audio file 'audio4.aac'. Preserve the original codecs and generate 'output4.mkv'."
+        },
+        {
+            "command": "ffmpeg -i input5.webm -i sound5.ogg -c:v copy -c:a libvorbis -strict experimental output5.webm",
+            "request": "Take the video file 'input5.webm' and the audio file 'sound5.ogg'. Keep the video codec unchanged and change the audio codec to Vorbis. Save the output as 'output5.webm'."
+        },
+        {
+            "command": "ffmpeg -i vid6.mp4 -i aud6.flac -c:v libx264 -c:a aac output6.mp4",
+            "request": "Combine the video file 'vid6.mp4' with the audio file 'aud6.flac'. Set the video codec to H.264 and the audio codec to AAC. Export the resulting file as 'output6.mp4'."
+        },
+        {
+            "command": "ffmpeg -i video7.mov -i audio7.wav -c copy final7.mov",
+            "request": "Merge the video file 'video7.mov' with the audio file 'audio7.wav' without modifying any codecs. Save the output as 'final7.mov'."
+        },
+        {
+            "command": "ffmpeg -i input8.mp4 -i sound8.aac -c:v copy -c:a libvorbis output8.mp4",
+            "request": "Combine the video file 'input8.mp4' with the audio file 'sound8.aac'. Preserve the video codec and change the audio codec to Vorbis. Create 'output8.mp4' as the output file."
+        },
+        {
+            "command": "ffmpeg -i vid9.mkv -i aud9.mp3 -c:v libx265 -c:a aac output9.mkv",
+            "request": "Merge the video file 'vid9.mkv' with the audio file 'aud9.mp3'. Set the video codec to libx265 and the audio codec to AAC. Save the output as 'output9.mkv'."
+        },
+        {
+            "command": "ffmpeg -i video10.mov -i audio10.m4a -c:v copy -c:a copy output10.mov",
+            "request": "Join the video file 'video10.mov' with the audio file 'audio10.m4a' without altering any codecs. Create 'output10.mov' as the resulting file."
+        },
+        {
+            "command": "ffmpeg -i input11.mkv -i sound11.wav -c copy -shortest output11.mkv",
+            "request": "Combine the video file 'input11.mkv' with the audio file 'sound11.wav' without changing any codecs. Generate 'output11.mkv' and make the output duration match the shorter input."
+        },
+        {
+            "command": "ffmpeg -i vid12.mp4 -i aud12.mp3 -c:v copy -c:a aac -b:a 128k output12.mp4",
+            "request": "Merge the video file 'vid12.mp4' with the audio file 'aud12.mp3'. Preserve the video codec and convert the audio codec to AAC with a bitrate of 128k. Save the output as 'output12.mp4'."
+        },
+        {
+            "command": "ffmpeg -i video13.gif -i audio13.mp3 -c:v copy -c:a aac output13.mp4",
+            "request": "Combine the GIF file 'video13.gif' with the audio file 'audio13.mp3'. Preserve the video format and convert the audio codec to AAC. Save the output as 'output13.mp4'."
+        },
+        {
+            "command": "ffmpeg -i input14.flv -i sound14.wav -c:v copy -c:a aac -shortest output14.flv",
+            "request": "Join the FLV file 'input14.flv' with the audio file 'sound14.wav'. Preserve the video codec and convert the audio codec to AAC. Create 'output14.flv' and make the output duration match the shorter input."
+        },
+        {
+            "command": "ffmpeg -i vid15.avi -i aud15.mp3 -c:v libx264 -c:a aac -b:v 500k -b:a 128k output15.mp4",
+            "request": "Merge the AVI file 'vid15.avi' with the audio file 'aud15.mp3'. Set the video codec to H.264 with a bitrate of 500k and convert the audio codec to AAC with a bitrate of 128k. Save the output as 'output15.mp4'."
+        },
+        {
+            "command": "ffmpeg -i video16.avchd -i audio16.aac -c copy output16.m2ts",
+            "request": "Please merge the AVCHD file 'video16.avchd' with the audio file 'audio16.aac' without altering any codecs. Save the output as 'output16.m2ts'."
+        },
+        {
+            "command": "ffmpeg -i input17.avi -i sound17.mp3 -c:v copy -c:a copy -map 0 -map 1 output17.avi",
+            "request": "Combine the AVI file 'input17.avi' with the audio file 'sound17.mp3' without modifying any codecs. Use all video and audio streams and save the output as 'output17.avi'."
+        },
+        {
+            "command": "ffmpeg -i vid18.flv -i aud18.aac -c:v copy -c:a copy -map 0:v -map 1:a output18.flv",
+            "request": "Merge the FLV file 'vid18.flv' with the audio file 'aud18.aac' without altering any codecs. Only use the video stream from the first input and the audio stream from the second input. Save the output as 'output18.flv'."
+        },
+        {
+            "command": "ffmpeg -i video19.gif -i audio19.mp3 -c copy output19.gif",
+            "request": "Combine the GIF file 'video19.gif' with the audio file 'audio19.mp3' without changing any codecs. Save the output as 'output19.gif'."
+        },
+        {
+            "command": "ffmpeg -i input20.flv -i sound20.wav -c:v copy -c:a copy -map 0 -map 1 output20.flv",
+            "request": "Merge the FLV file 'input20.flv' with the audio file 'sound20.wav' without modifying any codecs. Use all video and audio streams from both inputs. Save the output as 'output20.flv'."
+        },
+        {
+            "command": "ffmpeg -i vid21.avi -i aud21.mp3 -c:v mpeg4 -c:a mp2 output21.avi",
+            "request": "Combine the AVI file 'vid21.avi' with the audio file 'aud21.mp3'. Convert the video codec to MPEG-4 and the audio codec to MP2. Save the output as 'output21.avi'."
+        },
+        {
+            "command": "ffmpeg -i video22.avchd -i audio22.aac -c:v copy -c:a copy -map 0 -map 1 output22.m2ts",
+            "request": "Please merge the AVCHD file 'video22.avchd' with the audio file 'audio22.aac' without altering any codecs. Use all video and audio streams and save the output as 'output22.m2ts'."
+        },
+        {
+            "command": "ffmpeg -i input23.avi -i sound23.mp3 -c:v copy -c:a copy -map 0 -map 1 output23.avi",
+            "request": "Combine the AVI file 'input23.avi' with the audio file 'sound23.mp3' without modifying any codecs. Use all video and audio streams and save the output as 'output23.avi'."
+        },
+        {
+            "command": "ffmpeg -i vid24.flv -i aud24.aac -c:v copy -c:a copy -map 0:v:0 -map 1:a:0 output24.flv",
+            "request": "Merge the FLV file 'vid24.flv' with the audio file 'aud24.aac' without altering any codecs. Use the first video stream from the first input and the first audio stream from the second input. Save the output as 'output24.flv'."
+        },
+        {
+            "command": "ffmpeg -i video25.gif -i audio25.mp3 -c:v copy -c:a aac -b:a 192k output25.mkv",
+            "request": "Combine the GIF file 'video25.gif' with the audio file 'audio25.mp3'. Preserve the video format and convert the audio codec to AAC with a bitrate of 192k. Save the output as 'output25.mkv'."
+        },
+        {
+            "command": "ffmpeg -i input26.flv -i sound26.wav -c:v copy -c:a copy -shortest output26.flv",
+            "request": "Join the FLV file 'input26.flv' with the audio file 'sound26.wav' without changing any codecs. Create 'output26.flv' and make the output duration match the shorter input."
+        },
+        {
+            "command": "ffmpeg -i vid27.avi -i aud27.mp3 -c:v libx264 -c:a aac -b:v 500k -b:a 128k output27.mp4",
+            "request": "Merge the AVI file 'vid27.avi' with the audio file 'aud27.mp3'. Set the video codec to H.264 with a bitrate of 500k and convert the audio codec to AAC with a bitrate of 128k. Save the output as 'output27.mp4'."
+        },
+        {
+            "command": "ffmpeg -i video28.avchd -i audio28.aac -c copy output28.m2ts",
+            "request": "Please merge the AVCHD file 'video28.avchd' with the audio file 'audio28.aac' without altering any codecs. Save the output as 'output28.m2ts'."
+        },
+        {
+            "command": "ffmpeg -i input29.avi -i sound29.mp3 -c:v copy -c:a copy -map 0 -map 1 output29.avi",
+            "request": "Combine the AVI file 'input29.avi' with the audio file 'sound29.mp3' without modifying any codecs. Use all video and audio streams and save the output as 'output29.avi'."
+        },
+        {
+            "command": "ffmpeg -i vid30.flv -i aud30.aac -c:v copy -c:a copy -map 0:v -map 1:a output30.flv",
+            "request": "Merge the FLV file 'vid30.flv' with the audio file 'aud30.aac' without altering any codecs. Only use the video stream from the first input and the audio stream from the second input. Save the output as 'output30.flv'."
+        },
+        {
+            "command": "ffmpeg -i video31.gif -i audio31.mp3 -c copy output31.gif",
+            "request": "Combine the GIF file 'video31.gif' with the audio file 'audio31.mp3' without changing any codecs. Save the output as 'output31.gif'."
+        },
+        {
+            "command": "ffmpeg -i input32.flv -i sound32.wav -c:v copy -c:a copy -map 0 -map 1 output32.flv",
+            "request": "Merge the FLV file 'input32.flv' with the audio file 'sound32.wav' without modifying any codecs. Use all video and audio streams from both inputs. Save the output as 'output32.flv'."
+        },
+        {
+            "command": "ffmpeg -i vid33.avi -i aud33.mp3 -c:v mpeg4 -c:a mp2 output33.avi",
+            "request": "Combine the AVI file 'vid33.avi' with the audio file 'aud33.mp3'. Convert the video codec to MPEG-4 and the audio codec to MP2. Save the output as 'output33.avi'."
+        },
+        {
+            "command": "ffmpeg -i video34.avchd -i audio34.aac -c:v copy -c:a copy -map 0 -map 1 output34.m2ts",
+            "request": "Please merge the AVCHD file 'video34.avchd' with the audio file 'audio34.aac' without altering any codecs. Use all video and audio streams and save the output as 'output34.m2ts'."
+        },
+        {
+            "command": "ffmpeg -i input35.avi -i sound35.mp3 -c:v copy -c:a copy -map 0 -map 1 output35.avi",
+            "request": "Combine the AVI file 'input35.avi' with the audio file 'sound35.mp3' without modifying any codecs. Use all video and audio streams and save the output as 'output35.avi'."
+        },
+        {
+            "command": "ffmpeg -i vid36.flv -i aud36.aac -c:v copy -c:a copy -map 0:v:0 -map 1:a:0 output36.flv",
+            "request": "Merge the FLV file 'vid36.flv' with the audio file 'aud36.aac' without altering any codecs. Use the first video stream from the first input and the first audio stream from the second input. Save the output as 'output36.flv'."
+        },
+        {
+            "command": "ffmpeg -i video37.gif -i audio37.mp3 -c:v copy -c:a aac -b:a 192k output37.mkv",
+            "request": "Combine the GIF file 'video37.gif' with the audio file 'audio37.mp3'. Preserve the video format and convert the audio codec to AAC with a bitrate of 192k. Save the output as 'output37.mkv'."
+        },
+        {
+            "command": "ffmpeg -i input38.flv -i sound38.wav -c:v copy -c:a copy -shortest output38.flv",
+            "request": "Join the FLV file 'input38.flv' with the audio file 'sound38.wav' without changing any codecs. Create 'output38.flv' and make the output duration match the shorter input."
+        },
+        {
+            "command": "ffmpeg -i vid39.avi -i aud39.mp3 -c:v libx264 -c:a aac -b:v 500k -b:a 128k output39.mp4",
+            "request": "Merge the AVI file 'vid39.avi' with the audio file 'aud39.mp3'. Set the video codec to H.264 with a bitrate of 500k and convert the audio codec to AAC with a bitrate of 128k. Save the output as 'output39.mp4'."
+        },
+        {
+            "command": "ffmpeg -i video40.avchd -i audio40.aac -c copy output40.m2ts",
+            "request": "Please merge the AVCHD file 'video40.avchd' with the audio file 'audio40.aac' without altering any codecs. Save the output as 'output40.m2ts'."
+        },
+        {
+            "command": "ffmpeg -i input41.avi -i sound41.mp3 -c:v copy -c:a copy -map 0 -map 1 output41.avi",
+            "request": "Combine the AVI file 'input41.avi' with the audio file 'sound41.mp3' without modifying any codecs. Use all video and audio streams and save the output as 'output41.avi'."
+        },
+        {
+            "command": "ffmpeg -i vid42.flv -i aud42.aac -c:v copy -c:a copy -map 0:v -map 1:a output42.flv",
+            "request": "Merge the FLV file 'vid42.flv' with the audio file 'aud42.aac' without altering any codecs. Only use the video stream from the first input and the audio stream from the second input. Save the output as 'output42.flv'."
+        },
+        {
+            "command": "ffmpeg -i video43.gif -i audio43.mp3 -c copy output43.gif",
+            "request": "Combine the GIF file 'video43.gif' with the audio file 'audio43.mp3' without changing any codecs. Save the output as 'output43.gif'."
+        },
+        {
+            "command": "ffmpeg -i input44.flv -i sound44.wav -c:v copy -c:a copy -map 0 -map 1 output44.flv",
+            "request": "Merge the FLV file 'input44.flv' with the audio file 'sound44.wav' without modifying any codecs. Use all video and audio streams from both inputs. Save the output as 'output44.flv'."
+        },
+        {
+            "command": "ffmpeg -i vid45.avi -i aud45.mp3 -c:v mpeg4 -c:a mp2 output45.avi",
+            "request": "Combine the AVI file 'vid45.avi' with the audio file 'aud45.mp3'. Convert the video codec to MPEG-4 and the audio codec to MP2. Save the output as 'output45.avi'."
+        },
+        {
+            "command": "ffmpeg -i video46.avchd -i audio46.aac -c:v copy -c:a copy -map 0 -map 1 output46.m2ts",
+            "request": "Please merge the AVCHD file 'video46.avchd' with the audio file 'audio46.aac' without altering any codecs. Use all video and audio streams and save the output as 'output46.m2ts'."
+        },
+        {
+            "command": "ffmpeg -i input47.avi -i sound47.mp3 -c:v copy -c:a copy -map 0 -map 1 output47.avi",
+            "request": "Combine the AVI file 'input47.avi' with the audio file 'sound47.mp3' without modifying any codecs. Use all video and audio streams and save the output as 'output47.avi'."
+        },
+        {
+            "command": "ffmpeg -i vid48.flv -i aud48.aac -c:v copy -c:a copy -map 0:v:0 -map 1:a:0 output48.flv",
+            "request": "Merge the FLV file 'vid48.flv' with the audio file 'aud48.aac' without altering any codecs. Use the first video stream from the first input and the first audio stream from the second input. Save the output as 'output48.flv'."
+        },
+        {
+            "command": "ffmpeg -i video49.gif -i audio49.mp3 -c:v copy -c:a aac -b:a 192k output49.mkv",
+            "request": "Combine the GIF file 'video49.gif' with the audio file 'audio49.mp3'. Preserve the video format and convert the audio codec to AAC with a bitrate of 192k. Save the output as 'output49.mkv'."
+        },
+        {
+            "command": "ffmpeg -i input50.flv -i sound50.wav -c:v copy -c:a copy -shortest output50.flv",
+            "request": "Join the FLV file 'input50.flv' with the audio file 'sound50.wav' without changing any codecs. Create 'output50.flv' and make the output duration match the shorter input."
+        }
+    ]
+}

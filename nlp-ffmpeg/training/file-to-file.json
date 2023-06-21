@@ -1,0 +1,476 @@
+{
+  "data": [
+    {
+      "command": "ffmpeg -i input.avi output.mp4",
+      "request": "Please convert the file 'input.avi' to 'output.mp4' format."
+    },
+    {
+      "command": "ffmpeg -i input.mov -c:v libx264 output.mkv",
+      "request": "Could you transform the file 'input.mov' into 'output.mkv' format using the H.264 video codec?"
+    },
+    {
+      "command": "ffmpeg -i input.mp3 -vn -ar 44100 -ac 2 -b:a 192k output.flac",
+      "request": "I would like to change the file 'input.mp3' to 'output.flac' format with a sample rate of 44.1 kHz, 2 audio channels, and a bitrate of 192 kbit/s, please."
+    },
+    {
+      "command": "ffmpeg -i input.mkv -c:v libvpx -c:a libvorbis output.webm",
+      "request": "Is it possible to convert the file 'input.mkv' into 'output.webm' format using the VP8 video codec and Vorbis audio codec?"
+    },
+    {
+      "command": "ffmpeg -i input.mp4 -vf scale=640:480 output.avi",
+      "request": "I need to transform the file 'input.mp4' into 'output.avi' format with a resolution of 640x480, please."
+    },
+    {
+      "command": "ffmpeg -i input.wmv -q:v 0 output.mp4",
+      "request": "Please change the file 'input.wmv' to 'output.mp4' format with the best possible quality."
+    },
+    {
+      "command": "ffmpeg -i input.flac -vn -ar 44100 -ac 2 -b:a 192k output.mp3",
+      "request": "I'd like to convert the file 'input.flac' into 'output.mp3' format with a sample rate of 44.1 kHz, 2 audio channels, and a bitrate of 192 kbit/s, please."
+    },
+    {
+      "command": "ffmpeg -i input.ogg -c:a libmp3lame -q:a 2 output.aac",
+      "request": "Could you change the file 'input.ogg' into 'output.aac' format using the LAME MP3 audio codec and a quality level of 2?"
+    },
+    {
+      "command": "ffmpeg -i input.m4a -c:a flac output.wav",
+      "request": "Please convert the file 'input.m4a' into 'output.wav' format with the FLAC audio codec."
+    },
+    {
+      "command": "ffmpeg -i input.mov -c:v libvpx-vp9 -b:v 1M -c:a libopus output.webm",
+      "request": "Is it possible to transform the file 'input.mov' into 'output.webm' format using the VP9 video codec with a bitrate of 1M and Opus audio codec?"
+    },
+    {
+      "command": "ffmpeg -i input.mp4 -c:v libx265 output.hevc",
+      "request": "Please convert the file 'input.mp4' to 'output.hevc' format using the H.265 video codec."
+    },
+    {
+      "command": "ffmpeg -i input.flv -c:v mpeg4 -c:a aac output.mp4",
+      "request": "Could you change the file 'input.flv' into 'output.mp4' format using the MPEG-4 video codec and AAC audio codec?"
+    },
+    {
+      "command": "ffmpeg -i input.webm -c:v vp9 -c:a libvorbis output.mkv",
+      "request": "Is it possible to convert the file 'input.webm' into 'output.mkv' format using the VP9 video codec and Vorbis audio codec?"
+    },
+    {
+      "command": "ffmpeg -i input.mpg -c:v libx264 -b:v 10M output.mkv",
+      "request": "I would like to transform the file 'input.mpg' into 'output.mkv' format using the H.264 video codec with a bitrate of 10M."
+    },
+    {
+      "command": "ffmpeg -i input.aac -c:a pcm_s16le output.wav",
+      "request": "Please convert the file 'input.aac' into 'output.wav' format using the PCM 16-bit audio codec."
+    },
+    {
+      "command": "ffmpeg -i input.mp3 -c:a libfdk_aac -b:a 128k output.m4a",
+      "request": "Could you change the file 'input.mp3' to 'output.m4a' format using the Fraunhofer FDK AAC audio codec with a bitrate of 128 kbit/s?"
+    },
+    {
+      "command": "ffmpeg -i input.mkv -c:v libxvid -c:a ac3 output.avi",
+      "request": "Is it possible to convert the file 'input.mkv' into 'output.avi' format using the Xvid video codec and AC3 audio codec?"
+    },
+    {
+      "command": "ffmpeg -i input.mov -c:v prores -profile:v 3 output.mov",
+      "request": "I need to transform the file 'input.mov' into 'output.mov' format using the Apple ProRes video codec with a profile of 3."
+    },
+    {
+      "command": "ffmpeg -i input.webm -c:v libaom-av1 -crf 30 -b:v 0 output.mkv",
+      "request": "Please convert the file 'input.webm' into 'output.mkv' format using the AV1 video codec with a constant rate factor (CRF) of 30 and a variable bitrate."
+    },
+    {
+      "command": "ffmpeg -i input.ogg -c:a vorbis output.ogg",
+      "request": "Could you change the file 'input.ogg' into 'output.ogg' format using the Vorbis audio codec?"
+    },
+    {
+      "command": "ffmpeg -i input.wmv -c:v mpeg2video -c:a mp2 output.mpeg",
+      "request": "Is it possible to transform the file 'input.wmv' into 'output.mpeg' format using the MPEG-2 video codec and MP2 audio codec?"
+    },
+    {
+      "command": "ffmpeg -i input.flac -c:a libmp3lame -q:a 4 output.mp3",
+      "request": "I would like to convert the file 'input.flac' into 'output.mp3' format using the LAME MP3 audio codec with a quality level of 4."
+    },
+    {
+      "command": "ffmpeg -i input.webm -c:v libvpx -c:a libopus output.webm",
+      "request": "Please convert the file 'input.webm' into 'output.webm' format using the VP8 video codec and Opus audio codec."
+    },
+    {
+      "command": "ffmpeg -i input.aac -c:a aac -strict experimental output.aac",
+      "request": "Could you change the file 'input.aac' into 'output.aac' format using the AAC audio codec and enabling the experimental AAC encoder?"
+    },
+    {
+      "command": "ffmpeg -i input.avi -c:v copy -c:a copy output.avi",
+      "request": "Is it possible to convert the file 'input.avi' into 'output.avi' format without re-encoding, maintaining the original video and audio codecs?"
+    },
+    {
+      "command": "ffmpeg -i input.mkv -c:v copy -c:a libvorbis output.mkv",
+      "request": "Please change the file 'input.mkv' to 'output.mkv' format without re-encoding the video, but using the Vorbis audio codec."
+    },
+    {
+      "command": "ffmpeg -i input.m4a -c:v png -c:a copy output.mkv",
+      "request": "Could you transform the file 'input.m4a' into 'output.mkv' format, extracting the PNG images from the video and keeping the original audio codec?"
+    },
+    {
+      "command": "ffmpeg -i input.webm -vf drawtext=\"text='Hello':fontsize=24:fontcolor=white:x=10:y=10\" output.webm",
+      "request": "I would like to convert the file 'input.webm' into 'output.webm' format and add a text overlay saying 'Hello' with a font size of 24, white color, and positioned at coordinates (10, 10)."
+    },
+    {
+      "command": "ffmpeg -i input.mov -vf reverse output.mov",
+      "request": "Please reverse the frames of the file 'input.mov' and save it as 'output.mov' format."
+    },
+    {
+      "command": "ffmpeg -i input.mp4 -af volume=2 output.mp4",
+      "request": "Could you amplify the audio of the file 'input.mp4' by a factor of 2 and save it as 'output.mp4' format?"
+    },
+    {
+      "command": "ffmpeg -i input.avi -ss 00:01:30 -t 00:00:45 output.mp4",
+      "request": "Is it possible to extract a 45-second segment starting from 1 minute and 30 seconds of the file 'input.avi' and save it as 'output.mp4' format?"
+    },
+    {
+      "command": "ffmpeg -i input.mp3 -vn -af silenceremove=1:0:-50dB output.mp3",
+      "request": "Please remove the silent sections from the audio of the file 'input.mp3' with a minimum duration of 1 second and a threshold of -50dB, and save it as 'output.mp3' format."
+    },
+    {
+      "command": "ffmpeg -i input.mkv -vf \"eq=brightness=0.2:saturation=1.5\" output.mkv",
+      "request": "Could you adjust the brightness and saturation levels of the video in the file 'input.mkv' by decreasing the brightness to 0.2 and increasing the saturation to 1.5, and save it as 'output.mkv' format?"
+    },
+    {
+      "command": "ffmpeg -i input.webm -c:v libx264 -crf 18 -preset slow -c:a aac -b:a 128k output.mp4",
+      "request": "I would like to convert the file 'input.webm' into 'output.mp4' format using the H.264 video codec with a constant rate factor (CRF) of 18, slow encoding preset, and AAC audio codec with a bitrate of 128 kbit/s."
+    },
+    {
+      "command": "ffmpeg -i input.mp4 -c:v copy -c:a copy -f segment -segment_time 10 -reset_timestamps 1 output_%03d.mp4",
+      "request": "Please split the file 'input.mp4' into segments of 10 seconds each, without re-encoding the video and audio streams, and save them as sequential 'output_001.mp4', 'output_002.mp4', etc."
+    },
+    {
+      "command": "ffmpeg -i input.mp4 -vf \"select='gt(scene,0.4)',showinfo\" -f null -",
+      "request": "Could you analyze the frames of the video in 'input.mp4' and detect scenes with a threshold of 0.4, displaying the results, without saving any output file?"
+    },
+    {
+      "command": "ffmpeg -i input.wav -af \"afade=t=in:ss=0:d=3,afade=t=out:st=57:d=3\" output.wav",
+      "request": "Please apply a fade-in effect from the beginning to 3 seconds and a fade-out effect starting at 57 seconds and lasting 3 seconds to the audio of the file 'input.wav' and save it as 'output.wav' format."
+    },
+    {
+      "command": "ffmpeg -i input.webm -vf \"crop=320: 240: 0: 0\" output.webm",
+      "request": "Could you crop the video in the file 'input.webm' to a resolution of 320x240 pixels, starting from the top-left corner, and save it as 'output.webm' format?"
+    },
+    {
+      "command": "ffmpeg -i input.mp4 -vn -ar 44100 -ac 2 -c:a copy output.m4a",
+      "request": "Please extract the audio from the file 'input.mp4', convert it to 44.1 kHz sample rate, 2 audio channels, and save it as 'output.m4a' format without re-encoding."
+    },
+    {
+      "command": "ffmpeg -i input.mp4 -c:v copy -c:a copy -map 0 -segment_time 00:10:00 -f segment output_%03d.mp4",
+      "request": "Is it possible to split the file 'input.mp4' into segments of 10 minutes each, maintaining the original video and audio codecs, and save them as sequential 'output_001.mp4', 'output_002.mp4', etc.?"
+    },
+    {
+      "command": "ffmpeg -i input.mkv -c:v copy -c:a libmp3lame -q:a 4 output.mkv",
+      "request": "Could you change the file 'input.mkv' to 'output.mkv' format without re-encoding the video, but using the LAME MP3 audio codec with a quality level of 4?"
+    },
+    {
+      "command": "ffmpeg -i input.mpg -c:v copy -c:a aac -strict -2 output.mp4",
+      "request": "Please convert the file 'input.mpg' to 'output.mp4' format without re-encoding the video, but using the AAC audio codec with experimental compatibility."
+    },
+    {
+      "command": "ffmpeg -i input.webm -c:v libx264 -preset ultrafast -crf 18 -c:a copy output.mp4",
+      "request": "Could you convert the file 'input.webm' into 'output.mp4' format using the H.264 video codec with an ultrafast encoding preset and a constant rate factor (CRF) of 18, while keeping the original audio codec?"
+    },
+    {
+      "command": "ffmpeg -i input.mp4 -vf \"drawtext=text='Hello World':fontsize=24:fontcolor=white:x=(w-text_w)/2:y=(h-text_h)/2\" output.mp4",
+      "request": "Please add a text overlay saying 'Hello World' to the video in the file 'input.mp4', centered both horizontally and vertically, with a font size of 24 and white color, and save it as 'output.mp4' format."
+    },
+    {
+      "command": "ffmpeg -i input.mov -vf \"scale=iw/2:ih/2\" output.mov",
+      "request": "Could you resize the video in the file 'input.mov' to half its original dimensions and save it as 'output.mov' format?"
+    },
+    {
+      "command": "ffmpeg -i input.mp3 -ss 00:01:30 -to 00:02:30 -c copy output.mp3",
+      "request": "Please trim the audio of the file 'input.mp3' from 1 minute and 30 seconds to 2 minutes and 30 seconds, preserving the original audio codec, and save it as 'output.mp3' format."
+    },
+    {
+      "command": "ffmpeg -i input.mkv -c:v copy -c:a libfdk_aac -b:a 128k output.mp4",
+      "request": "Is it possible to convert the file 'input.mkv' to 'output.mp4' format without re-encoding the video, but using the Fraunhofer FDK AAC audio codec with a bitrate of 128 kbit/s?"
+    },
+    {
+      "command": "ffmpeg -i input.webm -c:v vp9 -c:a libopus output.mkv",
+      "request": "Please convert the file 'input.webm' to 'output.mkv' format using the VP9 video codec and Opus audio codec."
+    },
+    {
+      "command": "ffmpeg -i input.aac -c:a aac -b:a 192k -af \"volume=2\" output.aac",
+      "request": "Could you change the file 'input.aac' to 'output.aac' format using the AAC audio codec with a bitrate of 192 kbit/s and amplify the audio by a factor of 2?"
+    },
+    {
+      "command": "ffmpeg -i input.wmv -c:v mpeg4 -b:v 800k -c:a mp3 -b:a 128k output.avi",
+      "request": "Please convert the file 'input.wmv' to 'output.avi' format using the MPEG-4 video codec with a bitrate of 800 kbit/s and the MP3 audio codec with a bitrate of 128 kbit/s."
+    },
+    {
+      "command": "ffmpeg -i input.flac -c:a pcm_s16le output.wav",
+      "request": "Could you convert the file 'input.flac' to 'output.wav' format using the PCM 16-bit audio codec?"
+    },
+    {
+      "command": "ffmpeg -i input.webm -c:v copy -an output.mkv",
+      "request": "Please remove the audio from the file 'input.webm' and save it as 'output.mkv' format without re-encoding the video."
+    },
+    {
+      "command": "ffmpeg -i input.mp4 -vf \"fade=in: 0: 30,fade=out: 270: 30\" output.mp4",
+      "request": "Could you apply a fade-in effect for the first 30 frames and a fade-out effect for the last 30 frames of the video in the file 'input.mp4' and save it as 'output.mp4' format?"
+    },
+    {
+      "command": "ffmpeg -i input.mov -c:v libx264 -preset slow -crf 18 -c:a aac -b:a 128k output.mp4",
+      "request": "Please convert the file 'input.mov' to 'output.mp4' format using the H.264 video codec with the slow encoding preset, a constant rate factor (CRF) of 18, the AAC audio codec with a bitrate of 128 kbit/s."
+    },
+    {
+      "command": "ffmpeg -i input.mp3 -af \"atempo=1.5\" output.mp3",
+      "request": "Could you speed up the audio of the file 'input.mp3' by a factor of 1.5 and save it as 'output.mp3' format?"
+    },
+    {
+      "command": "ffmpeg -i input.avi -c:v libx264 -crf 18 -c:a copy output.mp4",
+      "request": "Please convert the file 'input.avi' to 'output.mp4' format using the H.264 video codec with a constant rate factor (CRF) of 18 and keeping the original audio codec."
+    },
+    {
+      "command": "ffmpeg -i input.webm -c:v libx265 -preset medium -crf 28 -c:a aac -b:a 128k output.mp4",
+      "request": "Could you convert the file 'input.webm' to 'output.mp4' format using the H.265 video codec with the medium encoding preset, a constant rate factor (CRF) of 28, the AAC audio codec with a bitrate of 128 kbit/s?"
+    },
+    {
+      "command": "ffmpeg -i input.mkv -vf \"transpose=1\" output.mkv",
+      "request": "Please rotate the video in the file 'input.mkv' 90 degrees clockwise and save it as 'output.mkv' format."
+    },
+    {
+      "command": "ffmpeg -i input.flv -c:v libx264 -c:a aac -crf 23 -preset medium output.mp4",
+      "request": "Could you convert the file 'input.flv' to 'output.mp4' format using the H.264 video codec with a constant rate factor (CRF) of 23, the AAC audio codec, and the medium encoding preset?"
+    },
+    {
+      "command": "ffmpeg -i input.mp4 -c:v libx264 -b:v 1000k -c:a aac -b:a 128k output.mp4",
+      "request": "Please convert the file 'input.mp4' to 'output.mp4' format using the H.264 video codec with a bitrate of 1000 kbit/s, the AAC audio codec with a bitrate of 128 kbit/s."
+    },
+    {
+      "command": "ffmpeg -i input.webm -vf \"setpts=PTS/2\" output.webm",
+      "request": "Could you change the playback speed of the video in the file 'input.webm' to half its original speed and save it as 'output.webm' format?"
+    },
+    {
+      "command": "ffmpeg -i input.mp3 -ss 00:01:30 -to 00:02:30 -c copy output.mp3",
+      "request": "Please extract a portion of the audio from the file 'input.mp3' starting from 1 minute and 30 seconds and ending at 2 minutes and 30 seconds, and save it as 'output.mp3' format without re-encoding."
+    },
+    {
+      "command": "ffmpeg -i input.mkv -vf \"scale=1280: 720:force_original_aspect_ratio=decrease,pad=1280: 720:(ow-iw)/2:(oh-ih)/2\" output.mkv",
+      "request": "Is it possible to resize the video in the file 'input.mkv' to a resolution of 1280x720 pixels while maintaining the original aspect ratio, and pad the remaining space with black borders, and save it as 'output.mkv' format?"
+    },
+    {
+      "command": "ffmpeg -i input.webm -af \"volume=0.5\" output.webm",
+      "request": "Please reduce the volume of the audio in the file 'input.webm' by half and save it as 'output.webm' format."
+    },
+    {
+      "command": "ffmpeg -i input.mp4 -vf \"transpose=2\" output.mp4",
+      "request": "Could you rotate the video in the file 'input.mp4' 90 degrees counterclockwise and save it as 'output.mp4' format?"
+    },
+    {
+      "command": "ffmpeg -i input.mkv -c:v libvpx-vp9 -b:v 1M -c:a libvorbis output.webm",
+      "request": "Please convert the file 'input.mkv' to 'output.webm' format using the VP9 video codec with a bitrate of 1M and the Vorbis audio codec."
+    },
+    {
+      "command": "ffmpeg -i input.mov -vf \"drawtext=text='Subtitle':fontsize=24:fontcolor=white:x=10:y=10\" output.mov",
+      "request": "Could you add a subtitle to the video in the file 'input.mov' saying 'Subtitle' with a font size of 24, white color, and positioned at coordinates (10, 10), and save it as 'output.mov' format?"
+    },
+    {
+      "command": "ffmpeg -i input.mp4 -c:v libx264 -preset fast -crf 23 -c:a aac -b:a 128k -vf \"eq=brightness=0.2\" output.mp4",
+      "request": "Please convert the file 'input.mp4' to 'output.mp4' format using the H.264 video codec with the fast encoding preset, a constant rate factor (CRF) of 23, the AAC audio codec with a bitrate of 128 kbit/s, and adjust the brightness of the video to 0.2."
+    },
+    {
+      "command": "ffmpeg -i input.webm -vf \"eq=contrast=1.5\" output.webm",
+      "request": "Could you increase the contrast of the video in the file 'input.webm' by a factor of 1.5 and save it as 'output.webm' format?"
+    },
+    {
+      "command": "ffmpeg -i input.avi -vf \"unsharp=5: 5: 0.5: 3: 3: 0.0\" output.avi",
+      "request": "Please apply an unsharp mask filter to the video in the file 'input.avi' with a strength of 5, radius of 5, threshold of 0.5, and save it as 'output.avi' format."
+    },
+    {
+      "command": "ffmpeg -i input.mkv -vf \"split[s0][s1];[s0]scale=640: 480[scaled];[s1]transpose=1[transposed];[scaled][transposed]overlay=10: 10\" output.mkv",
+      "request": "Is it possible to resize the video in the file 'input.mkv' to a resolution of 640x480 pixels and rotate it 90 degrees clockwise, and then overlay the resized video at position (10, 10), and save it as 'output.mkv' format?"
+    },
+    {
+      "command": "ffmpeg -i input.webm -c:v libx264 -c:a aac -vf \"drawtext=text='Subtitle':fontsize=24:fontcolor=white:x=10:y=10\" -b:v 1000k -b:a 128k output.mp4",
+      "request": "Please convert the file 'input.webm' to 'output.mp4' format using the H.264 video codec with a bitrate of 1000 kbit/s, the AAC audio codec with a bitrate of 128 kbit/s, and add a subtitle saying 'Subtitle' with a font size of 24, white color, and positioned at coordinates (10, 10)."
+    },
+    {
+      "command": "ffmpeg -i input.mp4 -c:v libx264 -c:a aac -crf 23 -preset fast -vf \"drawtext=text='Watermark':fontsize=24:fontcolor=white:x=(w-text_w)/2:y=(h-text_h)/2\" output.mp4",
+      "request": "Could you convert the file 'input.mp4' to 'output.mp4' format using the H.264 video codec with a constant rate factor (CRF) of 23, the AAC audio codec, the fast encoding preset, and add a watermark saying 'Watermark' with a font size of 24, white color, and centered both horizontally and vertically."
+    },
+    {
+      "command": "ffmpeg -i input.mkv -vf \"boxblur=10: 5\" output.mkv",
+      "request": "Please apply a box blur filter with a radius of 10 and a sigma of 5 to the video in the file 'input.mkv' and save it as 'output.mkv' format."
+    },
+    {
+      "command": "ffmpeg -i input.mov -c:v libx265 -preset slow -crf 18 -c:a aac -b:a 128k -vf \"hflip,vflip\" output.mp4",
+      "request": "Could you convert the file 'input.mov' to 'output.mp4' format using the H.265 video codec with the slow encoding preset, a constant rate factor (CRF) of 18, the AAC audio codec with a bitrate of 128 kbit/s, and apply a horizontal and vertical flip to the video?"
+    },
+    {
+      "command": "ffmpeg -i input.mp4 -c:v libx264 -preset ultrafast -tune animation -crf 23 -c:a aac -b:a 128k output.mp4",
+      "request": "Please convert the file 'input.mp4' to 'output.mp4' format using the H.264 video codec with the ultrafast encoding preset, the animation tuning option, a constant rate factor (CRF) of 23, the AAC audio codec with a bitrate of 128 kbit/s."
+    },
+    {
+      "command": "ffmpeg -i input.mp3 -af \"acrusher=0.9: 0.1: 20: 1: 0.8\" output.mp3",
+      "request": "Could you apply an audio crusher effect with a bit reduction of 0.9, a mix of original and crushed audio of 0.1, a sample rate of 20 kHz, a resonance of 1, and a compression ratio of 0.8 to the audio in the file 'input.mp3' and save it as 'output.mp3' format?"
+    },
+    {
+      "command": "ffmpeg -i input.mkv -vf \"split[a][b];[a]crop=iw/2:ih: 0: 0[left];[b]crop=iw/2:ih:iw/2: 0[right];[left][right]hstack\" output.mkv",
+      "request": "Please split the video in the file 'input.mkv' into two equal halves, crop the left half to its original width and height, crop the right half to its original width and height starting from the middle, and then horizontally stack the cropped halves together, and save it as 'output.mkv' format."
+    },
+    {
+      "command": "ffmpeg -i input.mp4 -vf \"rotate=45PI/180:c=none:ow=rotw(45PI/180):oh=roth(45*PI/180)\" output.mp4",
+      "request": "Could you rotate the video in the file 'input.mp4' by 45 degrees counterclockwise without cropping and save it as 'output.mp4' format?"
+    },
+    {
+      "command": "ffmpeg -i input.webm -vf \"split=2[a][b];[a]scale=iw/2:ih[left];[b]scale=iw/2:ih[right];[left][right]hstack\" output.webm",
+      "request": "Please split the video in the file 'input.webm' into two equal halves, resize the left half to half its original width while maintaining the original height, resize the right half to half its original width while maintaining the original height, and then horizontally stack the resized halves together, and save it as 'output.webm' format."
+    },
+    {
+      "command": "ffmpeg -i input.mp4 -vf \"negate=1: 1\" output.mp4",
+      "request": "Could you apply a negative effect to the video in the file 'input.mp4', converting all colors to their respective opposites, and save it as 'output.mp4' format?"
+    },
+    {
+      "command": "ffmpeg -i input.mov -vf \"vignette=angle=PI/4\" output.mov",
+      "request": "Please apply a vignette effect to the video in the file 'input.mov' with an angle of 45 degrees and save it as 'output.mov' format."
+    },
+    {
+      "command": "ffmpeg -i input.mp4 -c:v libx264 -crf 18 -preset fast -c:a aac -b:a 128k -vf \"scale=iw/2:ih/2\" output.mp4",
+      "request": "Could you convert the file 'input.mp4' to 'output.mp4' format using the H.264 video codec with a constant rate factor (CRF) of 18, the fast encoding preset, the AAC audio codec with a bitrate of 128 kbit/s, and resize the video to half its original dimensions?"
+    },
+    {
+      "command": "ffmpeg -i input.webm -vf \"colorbalance=rs=.3:gs=.6:bs=.1\" output.webm",
+      "request": "Please apply a color balance adjustment to the video in the file 'input.webm' by increasing the red saturation by 0.3, the green saturation by 0.6, and decreasing the blue saturation by 0.1, and save it as 'output.webm' format."
+    },
+    {
+      "command": "ffmpeg -i input.mp4 -c:v libx264 -crf 18 -preset medium -c:a aac -b:a 128k -vf \"transpose=clock\" output.mp4",
+      "request": "Could you convert the file 'input.mp4' to 'output.mp4' format using the H.264 video codec with a constant rate factor (CRF) of 18, the medium encoding preset, the AAC audio codec with a bitrate of 128 kbit/s, and rotate the video 90 degrees clockwise?"
+    },
+    {
+      "command": "ffmpeg -i input.webm -vf \"chromakey=0x00FF00: 0.1: 0.2\" output.webm",
+      "request": "Please apply a chroma key effect to the video in the file 'input.webm', replacing all pixels of color #00FF00 with transparency, using a similarity threshold of 0.1 and a blend factor of 0.2, and save it as 'output.webm' format."
+    },
+    {
+      "command": "ffmpeg -i input.mp4 -vf \"hue=h=180:s=0\" output.mp4",
+      "request": "Could you change the hue of the video in the file 'input.mp4' by 180 degrees while maintaining the original saturation, and save it as 'output.mp4' format?"
+    },
+    {
+      "command": "ffmpeg -i input.webm -vf \"select='between(t,10,20)'\" output.webm",
+      "request": "Please extract a 10-second segment starting from 10 seconds and ending at 20 seconds of the video in the file 'input.webm' and save it as 'output.webm' format."
+    },
+    {
+      "command": "ffmpeg -i input.mp4 -vf \"rotate=PI/2:ow=rotw(PI/2):oh=roth(PI/2):c=none\" output.mp4",
+      "request": "Could you rotate the video in the file 'input.mp4' 90 degrees counterclockwise without cropping and save it as 'output.mp4' format?"
+    },
+    {
+      "command": "ffmpeg -i input.mkv -vf \"scale=320: 240\" output.mkv",
+      "request": "Please resize the video in the file 'input.mkv' to a resolution of 320x240 pixels and save it as 'output.mkv' format."
+    },
+    {
+      "command": "ffmpeg -i input.webm -vf \"scale=1280: 720:force_original_aspect_ratio=decrease\" output.webm",
+      "request": "Could you resize the video in the file 'input.webm' to a resolution of 1280x720 pixels while maintaining the original aspect ratio, and save it as 'output.webm' format?"
+    },
+    {
+      "command": "ffmpeg -i input.mp4 -vf \"eq=brightness=0.5\" output.mp4",
+      "request": "Please decrease the brightness of the video in the file 'input.mp4' by 0.5 and save it as 'output.mp4' format."
+    },
+    {
+      "command": "ffmpeg -i input.mov -vf \"fade=in: 0: 30\" output.mov",
+      "request": "Could you apply a fade-in effect to the video in the file 'input.mov' for the first 30 frames and save it as 'output.mov' format?"
+    },
+    {
+      "command": "ffmpeg -i input.mp4 -vf \"fade=out: 270: 30\" output.mp4",
+      "request": "Please apply a fade-out effect to the video in the file 'input.mp4' for the last 30 frames and save it as 'output.mp4' format."
+    },
+    {
+      "command": "ffmpeg -i input.webm -vf \"split=2[a][b];[a]hue=h=60[scaled];[b]hue=h=-60[right];[scaled][right]hstack\" output.webm",
+      "request": "Could you split the video in the file 'input.webm' into two equal halves, shift the hue of the left half by 60 degrees, shift the hue of the right half by -60 degrees, and then horizontally stack the hue-shifted halves together, and save it as 'output.webm' format?"
+    },
+    {
+      "command": "ffmpeg -i input.mp4 -vf \"drawbox=x=10:y=10:w=100:h=100:color=red@0.5:t=fill\" output.mp4",
+      "request": "Please add a red rectangular box with a width of 100 pixels, height of 100 pixels, positioned at coordinates (10, 10) as a filled shape to the video in the file 'input.mp4' and save it as 'output.mp4' format."
+    },
+    {
+      "command": "ffmpeg -i input.webm -vf \"boxblur=10: 5\" output.webm",
+      "request": "Could you apply a box blur effect to the video in the file 'input.webm' with a radius of 10 and a sigma of 5, and save it as 'output.webm' format?"
+    },
+    {
+      "command": "ffmpeg -i input.mp4 -vf \"drawtext=text='Watermark':fontsize=24:fontcolor=white:x=(w-text_w)/2:y=(h-text_h)/2\" output.mp4",
+      "request": "Please add a watermark saying 'Watermark' with a font size of 24, white color, and centered both horizontally and vertically to the video in the file 'input.mp4', and save it as 'output.mp4' format."
+    },
+    {
+      "command": "ffmpeg -i input.avi output.mp4",
+      "request": "Please convert the file 'input.avi' to 'output.mp4' format."
+    },
+    {
+      "command": "ffmpeg -i input.mov -c:v libx264 output.mkv",
+      "request": "Could you transform the file 'input.mov' into 'output.mkv' format using the H.264 video codec?"
+    },
+    {
+      "command": "ffmpeg -i input.mp3 -vn -ar 44100 -ac 2 -b:a 192k output.flac",
+      "request": "I would like to change the file 'input.mp3' to 'output.flac' format with a sample rate of 44.1 kHz, 2 audio channels, and a bitrate of 192 kbit/s, please."
+    },
+    {
+      "command": "ffmpeg -i input.mkv -c:v libvpx -c:a libvorbis output.webm",
+      "request": "Is it possible to convert the file 'input.mkv' into 'output.webm' format using the VP8 video codec and Vorbis audio codec?"
+    },
+    {
+      "command": "ffmpeg -i input.mp4 -vf scale=640:480 output.avi",
+      "request": "I need to transform the file 'input.mp4' into 'output.avi' format with a resolution of 640x480, please."
+    },
+    {
+      "command": "ffmpeg -i input.wmv -q:v 0 output.mp4",
+      "request": "Please change the file 'input.wmv' to 'output.mp4' format with the best possible quality."
+    },
+    {
+      "command": "ffmpeg -i input.flac -vn -ar 44100 -ac 2 -b:a 192k output.mp3",
+      "request": "I'd like to convert the file 'input.flac' into 'output.mp3' format with a sample rate of 44.1 kHz, 2 audio channels, and a bitrate of 192 kbit/s, please."
+    },
+    {
+      "command": "ffmpeg -i input.ogg -c:a libmp3lame -q:a 2 output.aac",
+      "request": "Could you change the file 'input.ogg' into 'output.aac' format using the LAME MP3 audio codec and a quality level of 2?"
+    },
+    {
+      "command": "ffmpeg -i input.m4a -c:a flac output.wav",
+      "request": "Please convert the file 'input.m4a' into 'output.wav' format with the FLAC audio codec."
+    },
+    {
+      "command": "ffmpeg -i input.mov -c:v libvpx-vp9 -b:v 1M -c:a libopus output.webm",
+      "request": "Is it possible to transform the file 'input.mov' into 'output.webm' format using the VP9 video codec with a bitrate of 1M and Opus audio codec?"
+    },
+    {
+      "command": "ffmpeg -i input.avi output.mp4",
+      "request": "Convert the file 'input.avi' to 'output.mp4' format."
+    },
+    {
+      "command": "ffmpeg -i input.mov -c:v libx264 output.mkv",
+      "request": "Transform the file 'input.mov' into 'output.mkv' format with the H.264 video codec."
+    },
+    {
+      "command": "ffmpeg -i input.mp3 -vn -ar 44100 -ac 2 -b:a 192k output.flac",
+      "request": "Change the file 'input.mp3' to 'output.flac' format with a sample rate of 44.1 kHz, 2 audio channels, and a bitrate of 192 kbit/s."
+    },
+    {
+      "command": "ffmpeg -i input.mkv -c:v libvpx -c:a libvorbis output.webm",
+      "request": "Convert the file 'input.mkv' into 'output.webm' format using the VP8 video codec and Vorbis audio codec."
+    },
+    {
+      "command": "ffmpeg -i input.mp4 -vf scale=640:480 output.avi",
+      "request": "Transform the file 'input.mp4' into 'output.avi' format with a resolution of 640x480."
+    },
+    {
+      "command": "ffmpeg -i input.wmv -q:v 0 output.mp4",
+      "request": "Change the file 'input.wmv' to 'output.mp4' format with the best possible quality."
+    },
+    {
+      "command": "ffmpeg -i input.flac -vn -ar 44100 -ac 2 -b:a 192k output.mp3",
+      "request": "Convert the file 'input.flac' into 'output.mp3' format with a sample rate of 44.1 kHz, 2 audio channels, and a bitrate of 192 kbit/s."
+    },
+    {
+      "command": "ffmpeg -i input.ogg -c:a libmp3lame -q:a 2 output.aac",
+      "request": "Change the file 'input.ogg' to 'output.aac' format using the LAME MP3 audio codec and a quality level of 2."
+    },
+    {
+      "command": "ffmpeg -i input.m4a -c:a flac output.wav",
+      "request": "Convert the file 'input.m4a' into 'output.wav' format with the FLAC audio codec."
+    },
+    {
+      "command": "ffmpeg -i input.mov -c:v libvpx-vp9 -b:v 1M -c:a libopus output.webm",
+      "request": "Transform the file 'input.mov' into 'output.webm' format using the VP9 video codec with a bitrate of 1M and Opus audio codec."
+    }
+  ]
+}
